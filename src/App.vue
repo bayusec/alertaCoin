@@ -42,6 +42,7 @@ import {mapActions, mapState} from 'vuex'
 
 export default {
   mounted() {
+
     if (this.connection == null && this.watchCoins.length > 0) {
       console.log(this.connection)
       this.wsGetCoinPrices()

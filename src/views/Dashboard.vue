@@ -14,7 +14,7 @@
         </ul>
       </div>
     </div>
-    <div v-else><p>No has agregado ninguna moneda aún.</p></div>
+    <div v-else><p class="text-light fs-3">No has agregado ninguna moneda aún.</p></div>
   </div>
 </template>
 
