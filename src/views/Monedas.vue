@@ -11,7 +11,7 @@ import { OnClickOutside } from '@vueuse/components'
 
       <OnClickOutside  @trigger="clearSearch" :class="openSearch?'openSearch':'closeSearch'">
 
-        <input v-model="searchText" @keyup="filterCoins($event.target.value)" placeholder="Ex: BTCUSDT"
+        <input @keyup="filterCoins($event.target.value)" placeholder="Ex: BTCUSDT"
                class="form-control mt-3" type="text" aria-describedby="searchHelp">
 
         <div v-if="resultSearchCoins.length>0"
@@ -45,14 +45,13 @@ import { OnClickOutside } from '@vueuse/components'
 </template>
 
 <script>
-import {mapState,mapGetters, mapActions, mapMutations} from 'vuex'
+import {mapState,mapGetters, mapActions} from 'vuex'
 
 
 export default {
   name: 'Monedas',
   data() {
     return {
-      searchText: '',
       resultSearchCoins: [],
       openSearch:false
     }
