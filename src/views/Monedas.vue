@@ -2,6 +2,11 @@
 import { OnClickOutside } from '@vueuse/components'
 </script>
 
+<!--@TODO FIX
+-cambiar base url del fichero en live.
+-Cambiar el favicon
+-->
+
 <template>
   <div class=" vh-100 mh-100">
     <div class="container-fluid text-bg-dark rounded mt-5 p-4 ">

@@ -30,7 +30,7 @@ export default {
                     const doc = JSON.parse(message.data)
                     this.state.Monedas.watchCoins.find(e => {
                         if (e.name == doc.s) {
-                            e.price = Math.round((parseFloat(doc.c) + Number.EPSILON) * 100) / 100
+                            e.price = parseFloat(doc.c)
                         }
                     })
                 }
