@@ -64,7 +64,7 @@ export default {
     alertPrice(coin, limit){
       const text = `Alerta: "${coin}" ${limit} precio.`;
       new Notification('ALERTA DE PRECIOS', { body: text })
-      const audio = new Audio('https://assets.mixkit.co/sfx/download/mixkit-doorbell-tone-2864.wav');
+      const audio = new Audio('https://assets.mixkit.co/active_storage/sfx/1936/1936.wav');
       audio.play();
     }
   },
